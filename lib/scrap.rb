@@ -38,11 +38,3 @@ class Scrap
     @parse_page.css('#sortable-results').css('.rows').css('li')
   end
 end
-
-scrap = Scrap.new
-title = scrap.titles
-date = scrap.dates
-links = scrap.links
-puts title
-puts date
-puts links
