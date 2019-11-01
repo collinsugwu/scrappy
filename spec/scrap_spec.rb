@@ -1,18 +1,22 @@
 require './lib/scrap.rb'
 
-describe 'scrap' do
+describe 'titles' do
   it 'returns an array of title' do
     scrap = Scrap.new
     expect(scrap.titles).not_to be_empty
   end
+end
 
+describe 'links' do
   it 'returns an array of links' do
     scrap = Scrap.new
     expect(scrap.links).not_to be_empty
   end
+end
 
-  it 'returns an array of date' do
+describe 'dates' do
+  it 'returns an array of dates' do
     scrap = Scrap.new
-    expect(scrap.dates).not_to be_empty
+    expect(scrap.links).not_to be_empty
   end
 end
